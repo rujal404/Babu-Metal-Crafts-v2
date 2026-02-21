@@ -321,143 +321,88 @@
     </main>
 
         <!-- Logo -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<div id="ourclients">
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <div id="ourclients">
+  <div class="swiper clientSwiper">
+    <div class="swiper-wrapper">
 
-  <div class="clients-wrap">
-    <ul id="clientlogo" class="clearfix">
-      <li>
-        <img src="images/company-logos/nyse.png" alt="Logo">
-      </li>
-      <li>
-        <img src="images/company-logos/radisson.png" alt="Logo">
-      </li>
-      <li>
-        <img src="images/company-logos/gokarna.png" alt="Logo">
-      </li>
-      <li>
-        <img src="images/company-logos/ntnc.png" alt="Logo">
-      </li>
-      <li>
-        <img src="images/company-logos/The-Inn.png" alt="Logo" hspace='100'>
-      </li>
-      <li>
-        <img src="images/company-logos/hotel-roadhouse.png" alt="Logo" hspace='100'>
-      </li>
-      <li>
-        <img src="images/company-logos/mezze.png" alt="Logo">
-      </li>
-      <li>
-        <a href="" target="_blank"><img src="images/company-logos/IA.png" alt="Logo"></a>
-      </li>
-      <li>
-        <a href="" target="_blank"><img src="images/company-logos/PIa.png" alt="Logo"></a>
-      </li>
-      <li>
-        <img src="images/company-logos/the-baha.png" alt="Logo">
-      </li>
-      <li>
-        <a href="" target="_blank"><img src="images/company-logos/HA.png" alt="Logo" hspace='100'></a>
-      </li>
-      <li>
-        <img src="images/company-logos/nepalpolice.png" alt="Logo" hspace='100'>
-      </li>
-      <li>
-        <img src="images/company-logos/nbl.png" alt="Logo" hspace='100'>
-      </li>
-      <li>
-        <img src="images/company-logos/saarc.png" alt="Logo" hspace='100'>
-      </li>
-      <li>
-        <img src="images/company-logos/square.png" alt="Logo" hspace='100'>
-      </li>
-      <li>
-        <img src="images/company-logos/sbn.png" alt="Logo" hspace='100'>
-      </li>
-      <li>
-        <img src="images/company-logos/lmc.png" alt="Logo" hspace='100'>
-      </li>
-    </ul>
+      <div class="swiper-slide"><img src="images/company-logos/nyse.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/company-logos/radisson.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/company-logos/gokarna.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/company-logos/ntnc.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/company-logos/The-Inn.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/company-logos/hotel-roadhouse.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/company-logos/mezze.png" alt=""></div>
+      <div class="swiper-slide"><a href="" target="_blank"><img src="images/company-logos/IA.png" alt=""></a></div>
+      <div class="swiper-slide"><a href="" target="_blank"><img src="images/company-logos/PIa.png" alt=""></a></div>
+      <div class="swiper-slide"><img src="images/company-logos/the-baha.png" alt=""></div>
+      <div class="swiper-slide"><a href="" target="_blank"><img src="images/company-logos/HA.png" alt=""></a></div>
+      <div class="swiper-slide"><img src="images/company-logos/nepalpolice.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/company-logos/nbl.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/company-logos/saarc.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/company-logos/square.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/company-logos/sbn.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/company-logos/lmc.png" alt=""></div>
+
+    </div>
   </div>
 </div>
 
 <style>
-    #ourclients {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background:#f9f9f9;
-  padding-top: 30px;
-  padding-bottom:30px;
-  height:150px;
+  #ourclients {
+  background: #f9f9f9;
+  padding: 30px 0;
 }
-#ourclients .clients-wrap {
-  display: block;
-  align-content: center;
-  width: 92%;
-  margin: 0 auto;
-  overflow: hidden;
+
+.clientSwiper {
+  width: 100%;
 }
-#ourclients .clients-wrap ul {
-  display: block;
-  list-style: none;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+
+.clientSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#ourclients .clients-wrap ul li {
-  display: block;
-  float: left;
-  position: relative;
-  width: 220px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-}
-#ourclients .clients-wrap ul li img {
-  vertical-align: middle;
+
+.clientSwiper img {
+  width: 130px;
   max-width: 100%;
-  width:150px;
-  max-height: 100%;
-  -webkit-transition: 0 linear left;
-  -moz-transition: 0 linear left;
-  transition: 0 linear left;
+  opacity: 0.8;
+  transition: 0.6s;
 }
-#ourclients h3{
-border-bottom:2px solid #3399ff;
-width:150px;
-padding:10px;
+
+.clientSwiper img:hover {
+  opacity: 1;
+}
+
+.clientSwiper .swiper-wrapper {
+  transition-timing-function: linear !important;
 }
 </style>
 
 <script>
-$(function() {
-  var $clientslider = $('#clientlogo');
-  var clients = $clientslider.children().length;
-  var clientwidth = (clients * 220); 
-  $clientslider.css('width', clientwidth);
-  var rotating = true;
-  var clientspeed = 1800;
-  var seeclients = setInterval(rotateClients, clientspeed);
-  $(document).on({
-    mouseenter: function() {
-      rotating = false;
+var swiper = new Swiper(".clientSwiper", {
+  slidesPerView: 8,
+  spaceBetween: 20,
+  loop: true,
+  freeMode: true,
+  speed: 3000, // higher = slower smoother movement
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
     },
-    mouseleave: function() {
-      rotating = true;
-    }
-  }, '#ourclients');
-  function rotateClients() {
-    if (rotating != false) {
-      var $first = $('#clientlogo li:first');
-      $first.animate({
-        'margin-left': '-220px'
-      }, 2000, function() {
-        $first.remove().css({
-          'margin-left': '0px'
-        });
-        $('#clientlogo li:last').after($first);
-      });
+    576: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 5,
+    },
+    1200: {
+      slidesPerView: 8,
     }
   }
 });
