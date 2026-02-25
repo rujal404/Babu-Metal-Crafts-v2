@@ -23,7 +23,7 @@
     <link type="text/css" rel="stylesheet" href="css/styles.css">
     <link type="text/css" rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="css/innerpage.css"/>
     <!-- End Stylesheets -->
 </head>
 
@@ -118,142 +118,152 @@
         </div>
     </header>
     <!-- End Header -->
-    
-    <main>
-        <section class="page-header" style="background-image:url('images/banner/product_banner2.jpg');">
-            <div class="title">
-                <p>Discover Our Best Offers</p>
-                <h1>Products</h1>
-            </div>    
-        </section>
 
-        <section class="white-background">
-            <div class="row space">
-                <div class="column full">
-                    <div class="section-wrapper-boxed">
-                        <div class="rooms-grid style-big">
-                            <article class="animate__animated" data-animation-type="animate__fadeIn" data-animation-delay="0">
-                                <div class="inner">
-                                    <a href="double-bed.html">
-                                        <div class="media">
-                                            <div class="inner-media">
-                                                <img src="images/products/lamp.jpg" alt="">
-                                            </div>
-                                        </div>
+    <!-- Begin Main -->
+    <main class="room-single">
+        <div class="room-header">
+            <div class="bg">
+                <img src="images/banner/brooch.jpg" alt="">
+            </div>
 
-                                        <div class="content-box">
-                                            <div class="head">
-                                                <span class="room-title">Lightings & Accessories</span>
+            <div class="wrapper">
+                <div class="info">
+                    <span class="room-title">Brooch</span>
+                    <div class="room-details">
+                        <p>
+                            <span class="label">Size</span>
+                            <span class="content">3-5cm</span>
+                        </p>
+                        
+                        <p>
+                            <span class="label">Materila</span>
+                            <span class="content">Brass or Copper</span>
+                        </p>
 
-                                                <div class="room-details">
-                                                    <span><i class="icon-fi-maximize"></i> 16m2</span>
-                                                </div>
-                                            </div>
+                    </div>
+                </div>
 
-                                            <div class="text">
-                                                <p>Step into a world of timeless elegance and refined craftsmanship with our exclusive Lighting & Accessories collection. Every piece is thoughtfully designed and meticulously handcrafted to bring warmth, beauty, and character into your space.</p>
+                <div class="room-price">
+                    <span class="current-price">Rs.450 - Rs.1500 <span>/ piece</span></span>
+                </div>
+            </div>
+        </div>
 
-                                                <span class="explore">Explore</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
+        <!-- The Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <span id="closePopupBtn" class="close">&times;</span>
+        <p>Note: Clicking on Inquiry will re-direct you to Whatsapp.</p>
+    </div>
+</div>
 
-                            <article class="animate__animated" data-animation-type="animate__fadeIn" data-animation-delay="0">
-                                <div class="inner">
-                                    <a href="twin-details.html">
-                                        <div class="media">
-                                            <div class="inner-media">
-                                                <img src="images/products/home-decor.jpg" alt="">
-                                            </div>
-                                        </div>
 
-                                        <div class="content-box">
-                                            <div class="head">
+        <!-- Shop Section -->
+     <section class="shop">
+      <div class="container">
+          <h1>Brooch Options</h1>
 
-                                                <span class="room-title">Home Decor & Accessories</span>
+          <!-- Price Filter Form -->
+          <div class="filter-form">
+            <form id="priceFilterForm">
+                <label for="minPrice">Min Price:</label>
+                <input type="number" id="minPrice" name="minPrice" min="0" placeholder="0">
+                
+                <label for="maxPrice">Max Price:</label>
+                <input type="number" id="maxPrice" name="maxPrice" min="0" placeholder="10,000">
+                
+                <label for="sortOrder">Sort By:</label>
+                <select id="sortOrder" name="sortOrder">
+                    <option value="default">Default</option>
+                    <option value="latest">Latest</option>
+                    <option value="most-popular">Most Popular</option>
+                    <option value="low-to-high">Price: Low to High</option>
+                    <option value="high-to-low">Price: High to Low</option>
+                </select>
+                
+                <button type="submit">Filter</button>
+            </form>
+        </div>
 
-                                                <div class="room-details">
-                                                    <span><i class="icon-fi-maximize"></i> 16m2</span>
-                                                </div>
-                                            </div>
+          <!-- Product Grid -->
+          <div class="product-grid" id="productGrid">
+              <div class="product-card" data-price="450" data-date="2026-02-26" data-popularity="5">
+                  <img src="assets/images/dji__mini_3.webp" alt="Product 1">
+                  <h3>Bajra Brooch</h3>
+                  <p class="price">Rs. 450</p>
+                  <a href="https://wa.me/9808150973" target="_blank" class="btn">Inquiry</a>
+              </div>
 
-                                            <div class="text">
-                                                <p>Discover timeless beauty in our Home Décor & Accessories collection, featuring a wide range of exquisitely handcrafted pieces. Experience the perfect harmony of tradition, artistry, and elegance in every design.</p>
+              <div class="product-card" data-price="10999" data-date="2024-08-16" data-popularity="3">
+                  <img src="assets/images/HAKRC-F405-BLS-45A-Flicht-Controller.webp" alt="Product 2">
+                  <h3>HAKRC F405 + BLS 45A Flight Controller</h3>
+                  <p class="price">Rs. 10,999</p>
+                  <a href="https://s.daraz.com.np/s.ZBKN" target="_blank" class="btn">Buy Now</a>
+              </div>
 
-                                                <span class="explore">Explore</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
+              <div class="product-card" data-price="750" data-date="2024-08-17" data-popularity="2">
+                  <img src="assets/images/Mini-Motors.webp" alt="Product 3">
+                  <h3>Mini Drone Motor 11000RPM With 55Mm Propeller</h3>
+                  <p class="price">Rs. 750</p>
+                  <a href="https://s.daraz.com.np/s.ZBJ9" target="_blank" class="btn">Buy Now</a>
+              </div>
 
-                            <article class="animate__animated" data-animation-type="animate__fadeIn" data-animation-delay="0">
-                                <div class="inner">
-                                    <a href="triple-details.html">
-                                        <div class="media">
-                                            <div class="inner-media">
-                                                <img src="images/products/etching-product.jpg" alt="">
-                                            </div>
-                                        </div>
+              <div class="product-card" data-price="10250" data-date="2024-08-18" data-popularity="2">
+                  <img src="assets/images/Speedybee-F405-V4-Stack.webp" alt="Product 4">
+                  <h3>Speedybee F405 V4 Stack BLS 55A 4-in-1 ESC&FC 30x30</h3>
+                  <p class="price">Rs. 10,250</p>
+                  <a href="https://s.daraz.com.np/s.Zziq" target="_blank" class="btn">Buy Now</a>
+              </div>
 
-                                        <div class="content-box">
-                                            <div class="head">
+              <div class="product-card" data-price="190000" data-date="2024-08-18" data-popularity="4">
+                  <img src="assets/images/Mini-4_FlymoreCombo.webp" alt="Product 5">
+                  <h3>DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2)</h3>
+                  <p class="price">Rs. 190,000</p>
+                  <a href="https://s.daraz.com.np/s.ZzgA" target="_blank" class="btn">Buy Now</a>
+              </div>
+              
+              <div class="product-card" data-price="929" data-date="2024-08-18" data-popularity="2">
+                  <img src="assets/images/battery_3.7v2800mah.webp" alt="Product 6">
+                  <h3>2800mah Battery for Smile E88 Quadcopter Drone</h3>
+                  <p class="price">Rs. 929</p>
+                  <a href="https://s.daraz.com.np/s.ZA05" target="_blank" class="btn">Buy Now</a>
+              </div>
 
-                                                <span class="room-title">Metal Etching</span>
+              <div class="product-card" data-price="9886" data-date="2024-08-20" data-popularity="3">
+                  <img src="assets/images/9IMOD.webp" alt="Product 7">
+                  <h3>9IMOD 4pcs X2812 900KV 1115KV Brushless Motor 2-6S</h3>
+                  <p class="price">Rs. 9,886</p>
+                  <a href="https://s.daraz.com.np/s.0Yti" target="_blank" class="btn">Buy Now</a>
+              </div>
+            
+              
+          </div>
+      </div>
+        <div class="room-content" style="padding: 30px 0 30px 0;">
+            <div class="section-wrapper-boxed">
+                <div class="row space">
 
-                                                <div class="room-details">
-                                                    <span> 20m2</span>
-                                                </div>
-                                            </div>
+                    <div class="column full last no-margin-bottom">
 
-                                            <div class="text">
-                                                <p>Embark on a journey of refined artistry with our Metal Etching collection, where tradition meets precision craftsmanship. Each piece is meticulously handcrafted, showcasing intricate detailing and timeless design.</p>
+                        <div class="divider30 show-on-mobile"></div>
 
-                                                <span class="explore">Explore</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
+                        <div class="gallery style-grid size-3-columns">
 
-                            <article class="animate__animated" data-animation-type="animate__fadeIn" data-animation-delay="0">
-                                <div class="inner">
-                                    <a href="brooch.html">
-                                        <div class="media">
-                                            <div class="inner-media">
-                                                <img src="images/products/brooch.jpg" alt="">
-                                            </div>
-                                        </div>
-
-                                        <div class="content-box">
-                                            <div class="head">
-
-                                                <span class="room-title">Brooch</span>
-
-                                                <div class="room-details">
-                                                    <span> 16m2</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="text">
-                                                <p>Adorn yourself with intricate detailing and graceful forms that elevate any attire with effortless style. Crafted with precision and care, our brooches are more than accessories, they are wearable works of art.</p>
-
-                                                <span class="explore">Explore</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
 
                         </div>
                     </div>
+
                 </div>
             </div>
-        </section>
+        </div>
+
     </main>
-    <!-- End Main -->
 
     <!-- Logo -->
          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -343,7 +353,7 @@ var swiper = new Swiper(".clientSwiper", {
 });
 </script>
 
-     <footer class="skin-light">
+    <footer class="skin-light">
         <div class="inner-wrapper">
             <div class="main-content row space clearfix">
                 <div class="intro-content column full">
@@ -438,6 +448,6 @@ var swiper = new Swiper(".clientSwiper", {
     <script src="js/swiper/swiper.js"></script>
     <script src="js/magnific-popup/magnific-popup.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/innerpage.js"></script>
 </body>
 </html>
