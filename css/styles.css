@@ -237,7 +237,7 @@
                 background-attachment: fixed;
             }
             main .section-wrapper-boxed {
-                width: 1200px;
+                width: 1500px;
                 margin: 0 auto;
             }
             main p {
@@ -3403,7 +3403,7 @@
             grid-template-columns: 1fr 1fr;
         }
         .gallery.style-grid.size-3-columns {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
         .gallery.style-grid.size-4-columns {
             grid-template-columns: 1fr 1fr 1fr 1fr;
