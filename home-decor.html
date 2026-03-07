@@ -23,7 +23,7 @@
     <link type="text/css" rel="stylesheet" href="css/styles.css">
     <link type="text/css" rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="css/innerpage.css"/>
     <!-- End Stylesheets -->
 </head>
 
@@ -120,55 +120,160 @@
     </header>
     <!-- End Header -->
 
-    <main>
-        <section class="page-header" style="background-image:url('images/contact.jpg');">
-            <div class="title">
-                <p>Always Ready to Serve with Timeless Craftsmanship</p>
-                <h1>Contact Us</h1>
+    <!-- Begin Main -->
+    <main class="room-single">
+        <div class="room-header">
+            <div class="bg">
+                <img src="images/banner/brooch.jpg" alt="">
             </div>
-        </section>
 
-        <section>
+            <div class="wrapper">
+                <div class="info">
+                    <span class="room-title">Home Decor & Accessories</span>
+                    <div class="room-details">
+                        <!-- <p>
+                            <span class="label">Size</span>
+                            <span class="content">3-5cm</span>
+                        </p> -->
+                        
+                        <p>
+                            <span class="label">Materila</span>
+                            <span class="content">Brass or Copper</span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="room-price">
+                    <span class="current-price">Rs.750 - Rs.100,000+ <span>/ piece</span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <span id="closePopupBtn" class="close">&times;</span>
+        <p>Note: Clicking on Inquiry will re-direct you to Whatsapp.</p>
+        <p>And mentioned price may not be accurate.</p>
+    </div>
+</div>
+
+
+        <!-- Shop Section -->
+     <section class="shop">
+      <div class="container">
+          <h1>Home Decor & Accessories Options</h1>
+
+          <!-- Price Filter Form -->
+          <div class="filter-form">
+            <form id="priceFilterForm">
+                <label for="minPrice">Min Price:</label>
+                <input type="number" id="minPrice" name="minPrice" min="0" placeholder="0">
+                
+                <label for="maxPrice">Max Price:</label>
+                <input type="number" id="maxPrice" name="maxPrice" min="0" placeholder="10,000">
+                
+                <label for="sortOrder">Sort By:</label>
+                <select id="sortOrder" name="sortOrder">
+                    <option value="default">Default</option>
+                    <option value="latest">Latest</option>
+                    <option value="most-popular">Most Popular</option>
+                    <option value="low-to-high">Price: Low to High</option>
+                    <option value="high-to-low">Price: High to Low</option>
+                </select>
+                
+                <button type="submit">Filter</button>
+            </form>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid">
+            <div class="product-card" data-price="450" data-date="2026-02-26" data-popularity="3">
+                <img src="assets/images/dji__mini_3.webp" alt="Product 1">
+                <h3>Table Lamp</h3>
+                <p class="price">Rs. 450</p>
+                <a href="https://wa.me/9808150973" target="_blank" class="btn">Inquiry</a>
+            </div>
+
+            <div class="product-card" data-price="650" data-date="2026-03-03" data-popularity="3">
+                <img src="assets/images/dji__mini_3.webp" alt="Product 2">
+                <h3>Pendant Lamp</h3>
+                <p class="price">Rs. 650</p>
+                <a href="https://wa.me/9808150973" target="_blank" class="btn">Inquiry</a>
+            </div>
+
+            <div class="product-card" data-price="850" data-date="2026-03-06" data-popularity="4">
+                <img src="assets/images/dji__mini_3.webp" alt="Product 3">
+                <h3>Wall Lamps</h3>
+                <p class="price">Rs. 850</p>
+                <a href="https://wa.me/9808150973" target="_blank" class="btn">Inquiry</a>
+            </div>
+
+            <div class="product-card" data-price="650" data-date="2026-02-06" data-popularity="3">
+                <img src="assets/images/dji__mini_3.webp" alt="Product 4">
+                <h3>Lamp Covers</h3>
+                <p class="price">Rs. 650</p>
+                <a href="https://wa.me/9808150973" target="_blank" class="btn">Inquiry</a>
+            </div>
+
+            <div class="product-card" data-price="650" data-date="2026-02-06" data-popularity="4">
+                <img src="assets/images/dji__mini_3.webp" alt="Product 5">
+                <h3>Stand Lamps</h3>
+                <p class="price">Rs. 650</p>
+                <a href="https://wa.me/9808150973" target="_blank" class="btn">Inquiry</a>
+            </div>
+
+            <div class="product-card" data-price="550" data-date="2026-03-02" data-popularity="3">
+                <img src="assets/images/dji__mini_3.webp" alt="Product 5">
+                <h3>Laligurash Brooch</h3>
+                <p class="price">Rs. 550</p>
+                <a href="https://wa.me/9808150973" target="_blank" class="btn">Inquiry</a>
+            </div>
+
+            <div class="product-card" data-price="650" data-date="2026-03-06" data-popularity="3">
+                <img src="assets/images/dji__mini_3.webp" alt="Product 5">
+                <h3>Sankha Brooch</h3>
+                <p class="price">Rs. 650</p>
+                <a href="https://wa.me/9808150973" target="_blank" class="btn">Inquiry</a>
+            </div>
+
+            <div class="product-card" data-price="1200" data-date="2026-02-06" data-popularity="5">
+                <img src="assets/images/dji__mini_3.webp" alt="Product 6">
+                <h3>Custom Name Brooch</h3>
+                <p class="price">Rs. 1,200</p>
+                <a href="https://wa.me/9808150973" target="_blank" class="btn">Inquiry</a>
+            </div> 
+              
+        </div>
+      
+        <div class="room-content" style="padding: 30px 0 30px 0;">
             <div class="section-wrapper-boxed">
-                <div class="row space clearfix">
-                    <div>
-                        <div class="column one-half animate__animated" data-animation-type="animate__fadeIn" data-animation-delay="0">
-                            <div class="big-title">
-                                <p class="subtitle style-no-border no-margin color-accent">Let's talk</p>
-                                <h2 class="style-low-margin contacth2">Send Us, We'd love to hear from you.</h2>
-                            </div>
+                <div class="row space">
 
-                            <div class="divider20"></div>
+                    <div class="column full last no-margin-bottom">
 
-                            <form class="contact-form" id="contactform" action="#" method="post">
-                                <input type="text" name="name" placeholder="Name">
-                                <input type="email" name="email" placeholder="Email">
-                                <input type="text" name="subject" placeholder="Subject">
-                                <textarea name="message" placeholder="Message"></textarea>
-                                
-                                <div style="margin-top:20px;">
-                                <input  type="submit" name="submit" value="Send Message">
-                                </div>
-                                <div id="result_msg">
-                                </div>
-                            </form>
-                        </div>
+                        <div class="divider30 show-on-mobile"></div>
 
-                        <div class="column one-half last animate__animated" data-animation-type="animate__fadeIn" data-animation-delay="100">
-                            <div class="google-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d605.4419972047036!2d85.32384004694183!3d27.669558507497083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1978c366577f%3A0x5fe07c55acd65fd3!2sBabu%20Metal%20Crafts!5e1!3m2!1sen!2snp!4v1771327988006!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
+                        <div class="gallery style-grid size-3-columns">
+
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+                            <a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt=""></a>
+
                         </div>
                     </div>
 
-                    <div class="divider100"></div>
-
-                    
                 </div>
             </div>
-        </section>
+        </div>
+
     </main>
-    <!-- End Main -->
 
     <!-- Logo -->
          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -183,10 +288,10 @@
       <div class="swiper-slide"><img src="images/company-logos/The-Inn.png" alt=""></div>
       <div class="swiper-slide"><img src="images/company-logos/hotel-roadhouse.png" alt=""></div>
       <div class="swiper-slide"><img src="images/company-logos/mezze.png" alt=""></div>
-      <div class="swiper-slide"><a href="" target="_blank"><img src="images/company-logos/IA.png" alt=""></a></div>
-      <div class="swiper-slide"><a href="" target="_blank"><img src="images/company-logos/PIa.png" alt=""></a></div>
+      <div class="swiper-slide"><a href="https://image-ark.com" target="_blank"><img src="images/company-logos/IA.png" alt=""></a></div>
+      <div class="swiper-slide"><a href="https://pianepal.com" target="_blank"><img src="images/company-logos/PIa.png" alt=""></a></div>
       <div class="swiper-slide"><img src="images/company-logos/the-baha.png" alt=""></div>
-      <div class="swiper-slide"><a href="" target="_blank"><img src="images/company-logos/HA.png" alt=""></a></div>
+      <div class="swiper-slide"><a href="https://himalayanartisan.co/" target="_blank"><img src="images/company-logos/HA.png" alt=""></a></div>
       <div class="swiper-slide"><img src="images/company-logos/nepalpolice.png" alt=""></div>
       <div class="swiper-slide"><img src="images/company-logos/nbl.png" alt=""></div>
       <div class="swiper-slide"><img src="images/company-logos/saarc.png" alt=""></div>
@@ -258,8 +363,7 @@ var swiper = new Swiper(".clientSwiper", {
 });
 </script>
 
-    <!-- Footer -->
-     <footer class="skin-light">
+    <footer class="skin-light">
         <div class="inner-wrapper">
             <div class="main-content row space clearfix">
                 <div class="intro-content column full">
@@ -345,8 +449,6 @@ var swiper = new Swiper(".clientSwiper", {
         </div>
     </footer>
 
-    <script src="js/inspectelement.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/modernizr.js"></script>
@@ -356,50 +458,7 @@ var swiper = new Swiper(".clientSwiper", {
     <script src="js/swiper/swiper.js"></script>
     <script src="js/magnific-popup/magnific-popup.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#contactform').validate({
-                errorElement: 'span',
-                errorClass: 'validate-has-error',
-                rules: {
-                    name: {required: true},
-                    phone: {required: true},
-                    email: {required: true, email: true},
-                    message: {required: true}
-                },
-                messages: {
-                    name: {required: "Please enter your Name."},
-                    phone: {required: "Please enter your Phone Number."},
-                    email: {required: "Please enter your Email Address."},
-                    message: {required: "Please enter your Message."}
-                },
-                submitHandler: function (form) {
-                    var recaptcha = $("#g-recaptcha-response").val();
-                if (recaptcha === "") {
-                    event.preventDefault();
-                    alert("Please check the recaptcha");
-                    return false;
-                }
-                    var Frmval = $("form#contactform").serialize();
-                    $("input#submit").attr("disabled", "true").val('Processing...');
-                    $.ajax({
-                        type: "POST",
-                        dataType: "JSON",
-                        url: "enquery_mail.php",
-                        data: "action=forContact&" + Frmval,
-                        success: function (data) {
-                            var msg = eval(data);
-                            $("input#submit").removeAttr("disabled").val('Submit');
-                            $('div#result_msg').html(msg.message).css('display', 'block').fadeOut(8000);
-                            $("form#contactform")[0].reset();
-                        }
-                    });
-                    return false;
-                }
-            })
-        });
-    </script>
+    <script src="js/innerpage.js"></script>
+    <script src="js/inspectelement.js"></script>
 </body>
 </html>
